@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>キリル/仮名のグラゴル文字変換(키릴/가나 글라골 문자 변환기)</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Noto Sans', sans-serif;
+        }
+
+        body {
+            font-family: 'Noto Sans', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 80%;
+            max-width: 600px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        textarea {
+            width: 100%;
+            max-width: 500px;
+            height: 100px;
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            resize: none;
+            font-family: 'Noto Sans', sans-serif;
+            font-size: 16px;
+            line-height: 1.5;
+            display: inline-block;
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #007BFF;
+            color: #ffffff;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 20px;
+            font-family: 'Noto Sans', sans-serif;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+        
+        #output {
+            margin-top: 20px;
+            font-size: 1.2em;
+            white-space: pre-wrap;
+            font-family: 'Noto Sans', sans-serif;
+        }
+        
+
+        .up-text {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 5px 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>
+            키릴/카나 글라골 문자 변환기<br>
+            キリル/仮名のグラゴル文字変換
+        </h1>
+        <h3>
+            使う非通用表記(사용하는 비통용표기): ち=ⱍⰻ(чи), す = ⱄⱏⰹ(сы), <br>
+            つ=ⱌⱏⰹ(цы), ん=ⰾⱏ(нъ), っ= ⰴⱏ(дЪ), フ=ⱇⱆ(фу), ふ=ⱈⱆ(ху)
+        </h3>
+        <textarea id="input" placeholder=
+"키릴 문자(고대 교회슬라브어용 키릴 문자 지원), 
+히라가나, 카타카나를 입력하세요. (한자 미지원)
+キリル文字(古代教会スラヴ語用のキリル文字対応)、
+ひらがな、カタカナを入力してください．（漢字非対応）"></textarea>
+        <button id="convert-button">입력(入力)</button>
+        <h2>결과(結果):</h2>
+        <div id="output"></div>
+        <!-- <h2>원문(原文):</h2> -->
+        <!-- <div id="original-input"></div> -->
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
