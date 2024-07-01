@@ -5,6 +5,13 @@
     <title>キリル/仮名のグラゴル文字変換(키릴/가나 글라골 문자 변환기)</title>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
     <style>
+
+        @font-face {
+            font-family : '코펍';
+            src : url(KoPub\ Dotum\ Medium.ttf);
+        }
+
+
         * {
             font-family: 'Noto Sans', sans-serif;
         }
@@ -20,7 +27,17 @@
             height: 100vh;
         }
 
+
+        h1{
+            font-family: '코펍';
+        }
+
+        h2{
+            font-family: '코펍';
+        }
+
         .container {
+            font-family: 'Noto sans', sans-serif;
             background-color: #ffffff;
             padding: 20px;
             border-radius: 10px;
@@ -42,7 +59,7 @@
             border: 1px solid #ccc;
             border-radius: 5px;
             resize: none;
-            font-family: 'Noto Sans', sans-serif;
+            font-family: '코펍';
             font-size: 16px;
             line-height: 1.5;
             display: inline-block;
@@ -56,7 +73,7 @@
             border-radius: 5px;
             cursor: pointer;
             margin-bottom: 20px;
-            font-family: 'Noto Sans', sans-serif;
+            font-family: '코펍';
         }
 
         button:hover {
@@ -97,8 +114,8 @@
 "키릴 문자(고대 교회슬라브어용 키릴 문자 지원), 
 히라가나, 카타카나를 입력하세요. (한자 미지원)
 キリル文字(古代教会スラヴ語用のキリル文字対応)、
-ひらがな、カタカナを入力してください．（漢字非対応）"></textarea>
-        <button id="convert-button">입력(入力)</button>
+ひらがな、カタカナをインプット（漢字非対応）"></textarea>
+        <button id="convert-button">입력(インプット)</button>
         <h2>결과(結果):</h2>
         <div id="output"></div>
         <!-- <h2>원문(原文):</h2> -->

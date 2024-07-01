@@ -157,7 +157,7 @@ function convertText() {
 
     let convertedInput = '';
     //let originalInput = '';
-    for (let i = 0; i < input.length; i++) {
+    for (let i = 0; i < input.length; i++) { //인풋 길이만큼 반복
         const char = input[i];
         convertedInput += gana[char] || cyrillicToGlagolitic[char] || char;
         //originalInput += char;
