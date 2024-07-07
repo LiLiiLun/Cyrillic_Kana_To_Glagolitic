@@ -2,7 +2,7 @@ Special kana-glogolitic correspondence table part:
 (For convenience, I have written in Cyrillic where the Cyrillic alphabet exists. it appears as the Glagolitic alphabet, which corresponds to the Cyrillic alphabet.)
 
 
-し＝ши
+し＝щи
 
 ふ＝ху
 
